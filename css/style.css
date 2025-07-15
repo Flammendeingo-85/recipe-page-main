@@ -20,9 +20,9 @@
 
   /* MAIN FONTS */
   --fs-p: 1rem;
-  --fs-headings: ;
-  --ff-young-serif: ;
-  --ff-outfit: ;
+  --fs-heading: 2.5rem;
+  --ff-young-serif: "Young Serif", serif;
+  --ff-outfit: "Outfit", sans-serif;
   --fw-youngserif-400: 400;
   --fw-outfit-400: 400;
   --fw-outfit-600: 600;
@@ -91,14 +91,6 @@ h6 {
 p {
   text-wrap: pretty;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
 
 /*
   10. Create a root stacking context
@@ -117,4 +109,77 @@ h6 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Stone-150);
+}
+
+/***********************/
+/* MEDIAQUERY - MOBILE - 375px */
+/***********************/
+@media screen and (max-width: 659px) {
+  /****************/
+  /* MAIN SECTION */
+  /****************/
+  .content-wrapper {
+    padding: 2rem;
+    background-color: var(--White);
+  }
+
+  .main-intro {
+    margin-bottom: 2rem;
+    line-height: 1.4;
+  }
+
+  .main-intro h1 {
+    font-family: var(--ff-young-serif);
+    font-weight: var(--fw-youngserif-400);
+    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
+    text-align: left;
+    line-height: normal;
+  }
+
+  .main-intro p {
+    font-family: var(--ff-outfit);
+    font-size: 0.99rem;
+    font-weight: 400;
+  }
+
+  /*****************/
+  /* ASIDE SECTION */
+  /*****************/
+  .preparation-wrapper {
+    background-color: var(--Rose-50);
+    margin-bottom: 25px;
+    border-radius: 15px;
+  }
+
+  .preparation-header {
+    color: var(--Rose-800);
+    font-family: var(--ff-outfit);
+    font-size: 1.3rem;
+    padding-left: 25px;
+    padding-top: 18px;
+    margin-bottom: 10px;
+  }
+
+  .preparation-list {
+  }
+
+  .preparation-list li::marker {
+    color: var(--Rose-800);
+  }
+}
+
+/***************/
+/* attribution */
+/***************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
