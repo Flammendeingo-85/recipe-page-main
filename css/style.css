@@ -36,12 +36,9 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-
-/* 2. Remove default margin */
-* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* 3. Enable keyword animations */
@@ -56,6 +53,7 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-outfit);
 }
 
 /* 6. Improve media defaults */
@@ -103,22 +101,20 @@ p {
 /***************/
 /* MAIN STYLES */
 /***************/
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 body {
   background-color: var(--Stone-150);
+  color: var(--Stone-600)
+}
+
+span {
+  font-weight: var(--fw-outfit-700);
 }
 
 /***********************/
 /* MEDIAQUERY - MOBILE - 375px */
 /***********************/
-@media screen and (max-width: 659px) {
+@media screen and (max-width: 375px) {
   /****************/
   /* MAIN SECTION */
   /****************/
@@ -150,26 +146,56 @@ body {
   /*****************/
   /* ASIDE SECTION */
   /*****************/
-  .preparation-wrapper {
+  .prep__time {
+    display: flex;
+    flex-direction: column;
     background-color: var(--Rose-50);
-    margin-bottom: 25px;
-    border-radius: 15px;
-  }
-
-  .preparation-header {
-    color: var(--Rose-800);
+    width: 311px;
+    height: 196px;
+    padding: 1.5rem;
     font-family: var(--ff-outfit);
-    font-size: 1.3rem;
-    padding-left: 25px;
-    padding-top: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
   }
 
-  .preparation-list {
-  }
-
-  .preparation-list li::marker {
+  .prep__header {
     color: var(--Rose-800);
+    margin-bottom: 1rem;
+  }
+
+  .prep__list {
+    padding-left: 1.3rem;
+  }
+
+  .prep__list li {
+    padding-left: 1rem;
+    line-height: 1.75;
+    width: 211px;
+  }
+
+  li::marker {
+    color: var(--Rose-800);
+  }
+
+  /***********************/
+  /* INGREDIENTS SECTION */
+  /***********************/
+  .ingredient__header {
+    font-family: var(--ff-young-serif);
+    font-weight: var(--fw-youngserif-400);
+    color: var(--Brown-800);
+    margin-bottom: 1.5rem;
+  }
+
+  .ingredient__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.3rem;
+  }
+
+  .ingredient__list li {
+    padding-left: 1rem;
+    line-height: 1.75;
+    width: 271px;
   }
 }
 
