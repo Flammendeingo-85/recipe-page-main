@@ -183,7 +183,6 @@ span {
   /***********************/
   .ingredients {
     margin-bottom: 2rem;
-    
   }
 
   .ingredient__header {
@@ -195,9 +194,7 @@ span {
   }
 
   .ingredient__list {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1.6rem;
+    padding-left: 1.2rem;
   }
 
   .ingredient__list li {
@@ -206,7 +203,41 @@ span {
     width: 271px;
   }
 
+  /***********************/
+  /* INSTRUCTION SECTION */
+  /***********************/
+  .instructions {
+    margin-bottom: 2rem;
+    width: auto;
+  }
 
+  .instructions__header {
+    font-family: var(--ff-young-serif);
+    font-weight: var(--fw-youngserif-400);
+    font-size: 1.7rem;
+    color: var(--Brown-800);
+    margin-bottom: 1.5rem;
+  }
+
+  .instructions__list {
+    padding-left: 1rem;
+  }
+
+  .instructions li {
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .instructions__list li::marker {
+    font-weight: 900;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  /*********************/
+  /* NUTRITION SECTION */
+  /*********************/
+  
 }
 
 /***************/
