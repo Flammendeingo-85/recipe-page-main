@@ -112,6 +112,12 @@ span {
 }
 
 /*******************************/
+/* MEDIAQUERY - TABLET - 786px */
+/*******************************/
+
+
+
+/*******************************/
 /* MEDIAQUERY - MOBILE - 375px */
 /*******************************/
 @media screen and (max-width: 375px) {
@@ -207,8 +213,11 @@ span {
   /* INSTRUCTION SECTION */
   /***********************/
   .instructions {
+    border-top: 1px solid var(--Stone-150);
+    padding-top: 2rem;
+    border-bottom: 1px solid var(--Stone-150);
+    padding-bottom: 2rem;
     margin-bottom: 2rem;
-    width: auto;
   }
 
   .instructions__header {
@@ -226,10 +235,11 @@ span {
   .instructions li {
     padding-bottom: 0.5rem;
     padding-left: 1rem;
+    font-size: 1rem;
   }
 
   .instructions__list li::marker {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1rem;
     padding-left: 0.5rem;
   }
@@ -237,7 +247,39 @@ span {
   /*********************/
   /* NUTRITION SECTION */
   /*********************/
-  
+  .nutrition {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .nutrition__header {
+    font-family: var(--ff-young-serif);
+    font-weight: var(--fw-youngserif-400);
+    font-size: 1.7rem;
+    color: var(--Brown-800);
+    margin-bottom: 1.5rem;
+  }
+
+  .nutrition__txt {
+    margin-bottom: 1.5rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid var(--Stone-150);
+    padding: 12px 0px;
+  }
+
+  .right {
+    font-weight: 700;
+    color: var(--Brown-800);
+  }
 }
 
 /***************/
