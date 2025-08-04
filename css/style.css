@@ -115,8 +115,6 @@ span {
 /* MEDIAQUERY - TABLET - 786px */
 /*******************************/
 
-
-
 /*******************************/
 /* MEDIAQUERY - MOBILE - 375px */
 /*******************************/
@@ -273,7 +271,7 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-bottom: 1px solid var(--Stone-150);
-    padding: 12px 0px;
+    padding: 12px 25px 12px;
   }
 
   .right {
