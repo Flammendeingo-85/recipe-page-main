@@ -128,8 +128,10 @@ span {
   }
 
   .main-intro {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.4;
+    width: 311px;
+    height: 216px;
   }
 
   .main-intro h1 {
@@ -145,6 +147,7 @@ span {
     font-family: var(--ff-outfit);
     font-size: 0.99rem;
     font-weight: 400;
+    height: 120px;
   }
 
   /*****************/
@@ -158,7 +161,8 @@ span {
     height: 196px;
     padding: 1.5rem;
     font-family: var(--ff-outfit);
-    margin-bottom: 2rem;
+    margin: 1rem auto;
+    border-radius: 12px;;
   }
 
   .prep__header {
@@ -167,7 +171,7 @@ span {
   }
 
   .prep__list {
-    padding-left: 1.3rem;
+    padding-left: 1.2rem;
   }
 
   .prep__list li {
